@@ -4,11 +4,13 @@ import Layout from '../../layout/Layouts'
 const Home = () => {
   return (
     <Layout title='Sonidos Vela - Alquiler de Sonidos y Organización de Eventos'>
-      <div className="flex justify-between items-center py-32 gap-16">
-        <article className="w-3/5 flex flex-col justify-center items-center gap-4">
-          <div className="flex flex-col items-center justify-center gap-2">
-            <h1 className="text-4xl text-yellow font-bold text-center mb-2">
-              SONIDOS VELA
+      <div className="flex flex-col-reverse justify-between items-center py-16 px-8 gap-16 md:flex-row md:py-32">
+        <article className="w-full flex flex-col justify-center items-center gap-4 md:w-3/5">
+          <div className="flex flex-col items-center justify-center gap-1 md:gap-2">
+            <h1 className="text-yellow font-bold text-center text-2xl mb-2 md:text-2xl">
+              <strong className="text-xl font-normal">
+                SONIDOS VELA
+              </strong>
               <br />
               TU MEJOR OPCIÓN PARA SONIDO Y EVENTOS.
             </h1>
@@ -23,7 +25,7 @@ const Home = () => {
         <img
           src="/images/partying.svg"
           alt="party image"
-          className="w-2/5"
+          className="w-full md:w-2/5"
         />
       </div>
     </Layout>
